@@ -1,0 +1,9 @@
+.search-filters {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #EEE;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}

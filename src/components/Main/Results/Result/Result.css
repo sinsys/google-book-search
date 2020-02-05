@@ -1,0 +1,41 @@
+.book-wrapper {
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.book-author {
+	display: block;
+	font-size: 1rem;
+	color: #CCC;
+}
+.book-title {
+	text-align: center;
+	width: 100%;
+}
+.book-thumbnail {
+	max-width: 128px;
+}
+
+.book-buy-wrapper {
+	min-width: 128px;
+}
+.book-details-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: space-evenly;
+	padding-bottom: 1rem;
+}
+
+.book-description {
+	padding: 1rem;
+}
+
+hr {
+	width: 100%;
+	margin: 0.25rem;
+	border: 1px solid #DDD;
+}
