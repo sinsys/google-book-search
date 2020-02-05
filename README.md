@@ -1,3 +1,23 @@
+# Google Books API - Search
+This is a basic project exploring interacting with an API using React.js, namely the Google Books API
+[https://developers.google.com/books/docs/v1/getting_started](https://developers.google.com/books/docs/v1/getting_started)
+## Functionality
+You can search any search terms you'd like. The API searches through book titles, authors, and descriptions to find the results.
+Several filters were added to assist with searching:
+
+ - Cost
+	 - All *(Default)*
+	 - Free
+	 - Paid
+ - Search Method
+	 - Relevance *(Default)*
+	 - Newest
+ - Max Results
+	 - 10 *(Default)*
+	 - 3-10 Listed
+
+## Running the App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
