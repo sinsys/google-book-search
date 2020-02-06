@@ -46,6 +46,16 @@ class Result extends Component {
 		}
 	}
 
+	displayThumbnail(src) {
+		console.log(src);
+		if(typeof(src.imageLinks.thumbnail) === undefined){
+			return(
+				"https://dummyimage.com/128x206/CCCCCC/333333.jpg&text=No+thumbnail+found"
+			)
+		} else {
+			return src.imageLinks.thumbnail;
+		}
+	}
 	render() {
 		return (
 			<div
@@ -65,10 +75,7 @@ class Result extends Component {
 					className="book-details-wrapper"
 				>
 					<img
-					  src={this.props.bookDetails.volumeInfo.imageLinks.thumbnail
-					  	? this.props.bookDetails.volumeInfo.imageLinks.thumbnail
-					  	: "https://dummyimage.com/128x206/CCCCCC/333333.jpg&text=No+thumbnail+found"
-					  }
+					  src={this.displayThumbnail(this.props.bookDetails.volumeInfo)}
 					  alt={this.props.bookDetails.volumeInfo.title + " thumbnail"}
 					  className="book-thumbnail"
 					/>
